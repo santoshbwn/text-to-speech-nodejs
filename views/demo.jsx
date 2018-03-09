@@ -192,7 +192,6 @@ export default class Demo extends Component {
     return (
       <section className="_container _container_large">
         <div className="row">
-          <h2 className="base--h2 title">Input Text</h2>
           <div className="voice-input">
             <select
               name="voice"
