@@ -193,9 +193,6 @@ export default class Demo extends Component {
       <section className="_container _container_large">
         <div className="row">
           <h2 className="base--h2 title">Input Text</h2>
-          <p className="base--p normalfont">
-            {TEXT_DESCRIPTION}
-          </p>
           <div className="voice-input">
             <select
               name="voice"
@@ -212,12 +209,6 @@ export default class Demo extends Component {
           <Tabs selected={0} onChange={this.onTabChange}>
             <Pane label="Text">
               <textarea onChange={this.onTextChange} className="base--textarea textarea" spellCheck="false" value={this.state.text || ''} />
-            </Pane>
-            <Pane label={this.state.ssmlLabel}>
-              <textarea onChange={this.onSsmlChange} className="base--textarea textarea" spellCheck="false" value={this.state.ssml || ''} />
-            </Pane>
-            <Pane label="Voice Transformation SSML">
-              <textarea readOnly={!this.state.ssml_voice} onChange={this.onVoiceSsmlChange} className="base--textarea textarea" spellCheck="false" value={this.state.ssml_voice || 'Voice Transformation not currently supported for this language.'} />
             </Pane>
           </Tabs>
           <div className="output-container">
