@@ -8,7 +8,7 @@
 //
 // @see http://casperjs.readthedocs.org/en/latest
 casper.test.begin('Text To Speech', 16, function suite(test) {
-  const baseHost = 'http://localhost:3000';
+  const baseHost = 'http://localhost:3001';
 
   function testForButtons() {
     casper.waitForSelector('div.buttons-container', function () {

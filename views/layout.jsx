@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Header, Jumbotron } from 'watson-react-components';
 
 // eslint-disable-next-line
-const DESCRIPTION = 'This section reads out the product names obtained from the search results in ikea.com, out of which customers can select one or will have options to add more filters or naviagte back';
+const DESCRIPTION = 'This section will read out the product names obtained from the search results in ikea.com, out of which customers can select one or will have options to add more filters or naviagte back';
 
 function Layout(props) {
   return (
